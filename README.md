@@ -7,10 +7,7 @@
 
 ## 📝 Description
 
-On est des oufs.
-
-> [!WARNING]  
-> Ce projet est un projet de fou, il est tellement fou que même les fous ne peuvent pas le comprendre.
+> Ce projet a pour but de réaliser une visualisation de données sur la musique. Nous allons utiliser des données de Spotify pour réaliser des graphiques et des visualisations de données.
 
 ## 📍 Prérequis pour la compilation
 
