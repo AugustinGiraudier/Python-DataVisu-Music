@@ -1,7 +1,7 @@
 <p align="center">
 <img alt="DataHub" src="https://www.miage.fr/wp-content/uploads/2020/11/MIAGE_LOGO-RESEAU_COULEURS.png" height="160px" />
 </p>
-<h1 align="center"> Projet .NET</h1>
+<h1 align="center"> Projet Data Visualisation </h1>
 
 ---
 
@@ -24,15 +24,15 @@ git clone https://github.com/AugustinGiraudier/Python-DataVisu-Music.git
 
 ## 🚀 Objectifs
 
-- [ ] Objectif 1: Network Graph : stream en fonction des musiques avec plusieurs artistes (le lien est plus épais en fonction du nombre de stream) (le but est de déterminer quels artistes en feat sont les plus bénéfiques à la popularité du son)
+- [ ] Objectif 1: Objectif 1: Network Graph -> stream en fonction des musiques avec plusieurs artistes
 
-- [ ] Objectif 2: Graphe aire de flux dansabilité, énergie, acoustique, balance sur période a granularité (le but est de montrer à quels moments sortir des musiques plus ou moins dansante, énergique, acoustique ou balanced)
+- [ ] Objectif 2: Graphe aire de flux dansabilité, énergie, acoustique, balance sur période a granularité sur un an
 
-- [ ] Objectif 3: Coxcomb Chart des streams de genres sur une année avec double échelle pour nombre d’artiste par genre (le but est de comparer les genres)
+- [ ] Objectif 3:  Coxcomb Chart des streams de genres sur une année avec double échelle pour nombre d’artiste par genre
 
-- [ ] Objectif 4: Focus + contexte (granularité de temps) visualiser comment le nombre de streams évolue en fonction du temps, avec la possibilité de se concentrer sur des périodes spécifiques. sur une année (le but est de montrer le moment ou le secteur musical est le plus dynamique)
+- [ ] Objectif 4: Line chart Focus + contexte (granularité de temps) visualiser comment le nombre de streams évolue en fonction du temps, avec la possibilité de se concentrer sur des périodes spécifiques
 
-- [ ] Objectif 5: Heatmap Bpm par région / continent / pays sur une année (le but est de montrer le bpm idéal en fonction de la région ciblée)
+- [ ] Objectif 5: Heatmap Bpm par région / continent / pays sur une année -> peut être faire des pays cliquable avec d’autres graphs
 
 
 ## ✍️ Auteurs
