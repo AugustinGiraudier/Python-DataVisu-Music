@@ -5,21 +5,21 @@ import plotly.express as px
 import statsmodels.api as sm
 
 # Load and prepare the dataset
-data = pd.read_csv("dataset/dataset.csv")
+data = pd.read_csv("dataset/dataset_filtered.csv")
 
 # Keep only relevant columns and drop rows with non-numeric or NaN values in the required columns
-data_filtered = data[['track_name', 'in_spotify_playlists', 'streams', 'artist.s._name', 'released_year']].dropna()
+data_filtered = data[['track', 'spotify_playlists', 'streams', 'artist_name', 'released_year']].dropna()
 data_filtered = data_filtered[data_filtered['streams'].apply(lambda x: str(x).isdigit())]
-data_filtered = data_filtered[data_filtered['in_spotify_playlists'].apply(lambda x: str(x).isdigit())]
+data_filtered = data_filtered[data_filtered['spotify_playlists'].apply(lambda x: str(x).isdigit())]
 data_filtered = data_filtered[data_filtered['released_year'].apply(lambda x: str(x).isdigit())]
 
 # Convert columns to appropriate data types
-data_filtered['in_spotify_playlists'] = data_filtered['in_spotify_playlists'].astype(int)
+data_filtered['spotify_playlists'] = data_filtered['spotify_playlists'].astype(int)
 data_filtered['streams'] = data_filtered['streams'].astype(int)
 data_filtered['released_year'] = data_filtered['released_year'].astype(int)
 
 # Perform a linear regression to add a regression line
-X = sm.add_constant(data_filtered['in_spotify_playlists'])
+X = sm.add_constant(data_filtered['spotify_playlists'])
 model = sm.OLS(data_filtered['streams'], X).fit()
 data_filtered['regression_line'] = model.predict(X)
 
@@ -38,20 +38,20 @@ app.layout = html.Div([
 def update_graph(_):
     fig = px.scatter(
         data_filtered,
-        x='in_spotify_playlists',
+        x='spotify_playlists',
         y='streams',
         color='released_year',
         color_continuous_scale=["yellow", "orange", "purple"],
         hover_data={
-            'track_name': True,
-            'artist.s._name': True,
-            'in_spotify_playlists': True,
+            'track': True,
+            'artist_name': True,
+            'spotify_playlists': True,
             'streams': True,
             'released_year': True
         },
         labels={
             'released_year': 'Released Year',
-            'in_spotify_playlists': 'Number of Playlists',
+            'spotify_playlists': 'Number of Playlists',
             'streams': 'Number of Streams'
         },
         title="Relation between Spotify Playlists and Streams by Release Year"
@@ -59,7 +59,7 @@ def update_graph(_):
 
     # Add regression line
     fig.add_scatter(
-        x=data_filtered['in_spotify_playlists'],
+        x=data_filtered['spotify_playlists'],
         y=data_filtered['regression_line'],
         mode='lines',
         name='Regression Line',
