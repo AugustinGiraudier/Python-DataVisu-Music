@@ -25,7 +25,7 @@ git clone https://github.com/AugustinGiraudier/Python-DataVisu-Music.git
 
 - [ ] Objectif 2: Graphe aire de flux dansabilité, énergie, acoustique, balance sur période a granularité sur un an
 
-- [ ] Objectif 3:  Coxcomb Chart des streams de genres sur une année avec double échelle pour nombre d’artiste par genre
+- [ ] Objectif 3: Scatter Plot pour afficher la relation entre le nombre de streams et le nombre de playlists dans lesquelles une chanson est intégrée
 
 - [ ] Objectif 4: Line chart Focus + contexte (granularité de temps) visualiser comment le nombre de streams évolue en fonction du temps, avec la possibilité de se concentrer sur des périodes spécifiques
 
