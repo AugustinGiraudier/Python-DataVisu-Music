@@ -138,8 +138,6 @@ def create_musical_characteristics():
         dcc.Graph(id='stacked-area-chart')
     ])
 
-# [Rest of the code remains the same until the callbacks section]
-
 # Add new callback for the stacked area chart
 @app.callback(
     Output('stacked-area-chart', 'figure'),
