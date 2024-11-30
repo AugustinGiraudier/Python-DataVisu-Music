@@ -12,24 +12,24 @@
 ## 📍 Prérequis pour la compilation
 
 - Python 3.8
+- Plotly
+- Pandas
+- Numpy
+- Dash
 
-## 🏁 Pour commencer
-Il vous suffit de cloner le projet sur votre machine locale.
-```shell
-git clone https://github.com/AugustinGiraudier/Python-DataVisu-Music.git
-```
+## 📽️ [Vidéo de présentation](https://youtu.be/VOQN63dwxjk)
 
-## 🚀 Objectifs
+## 🚀 Techniques de visualisation de données
 
-- [x] Objectif 1: Objectif 1: Network Graph -> stream en fonction des musiques avec plusieurs artistes
+- [x] Technique 1: Network Graph -> stream en fonction des musiques avec plusieurs artistes
 
-- [x] Objectif 2: Graphe aire de flux dansabilité, énergie, acoustique, balance sur période a granularité sur un an
+- [x] Technique 2: Graphe aire de flux dansabilité, énergie, acoustique, balance sur période a granularité sur un an
 
-- [x] Objectif 3: Scatter Plot pour afficher la relation entre le nombre de streams et le nombre de playlists dans lesquelles une chanson est intégrée
+- [x] Technique 3: Scatter Plot pour afficher la relation entre le nombre de streams et le nombre de playlists dans lesquelles une chanson est intégrée
 
-- [x] Objectif 4: Line chart Focus + contexte (granularité de temps) visualiser comment le nombre de streams évolue en fonction du temps, avec la possibilité de se concentrer sur des périodes spécifiques
+- [x] Technique 4: Line chart Focus + contexte (granularité de temps) visualiser comment le nombre de streams évolue en fonction du temps, avec la possibilité de se concentrer sur des périodes spécifiques
 
-- [x] Objectif 5: Heatmap Bpm par région / continent / pays sur une année -> peut être faire des pays cliquable avec d’autres graphs
+- [x] Technique 5: Heatmap Bpm par région / continent / pays sur une année -> peut être faire des pays cliquable avec d’autres graphs
 
 
 ## ✍️ Auteurs
